@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheHunters</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="banner">
+            <div class="navbar">
+                <img class="logo" src="asset/logo.jpg">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                    <li> <a href="gallery.html">Gallery</a></li>
+                    <li> <a href="event.html">Event</a></li>
+                    <li> <a href="forum.html">Forum</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="chatBox" class="chat-box">
+                <!-- Pesan-pesan akan muncul di sini -->
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Ketik pesan..." onkeydown="handleEnter(event)">
+                <button onclick="sendMessage()">Kirim</button>
+            </div>
+        </div>
+
+        <script src="chat.js"></script>
+    </nav>
+
+</body>
+
+</html>
